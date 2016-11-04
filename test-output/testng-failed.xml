@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.siddharth.test.QuickTest.AutoSuggest">
+      <class name="way2AutomationClass.AppInstalltion">
         <methods>
           <include name="setUp"/>
-          <include name="googleSuggest"/>
+          <include name="install"/>
         </methods>
-      </class> <!-- com.siddharth.test.QuickTest.AutoSuggest -->
+      </class> <!-- way2AutomationClass.AppInstalltion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

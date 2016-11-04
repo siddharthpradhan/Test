@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class ClickOnMenu {
-	public static WebDriver driver;
+	public WebDriver driver;
 
 	@BeforeTest()
 	public WebDriver setUp()
@@ -29,8 +29,14 @@ public class ClickOnMenu {
 	{
 		WebElement menu = driver.findElement(By.xpath("//span[text()='About Company']"));
 		Actions act = new Actions(driver);
-		act.moveToElement(menu).perform();
-		driver.findElement(By.xpath("//a[text()='Areas of Expertise']")).click();
+		
+		//Right click and open in new window.
+		act.contextClick(menu).perform();
+		act.sendKeys("w").perform();
+	
+		//Menu click
+		/*act.moveToElement(menu).perform();
+		driver.findElement(By.xpath("//a[text()='Areas of Expertise']")).click();*/
 		
 	}
 	
